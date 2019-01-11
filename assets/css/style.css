@@ -1,0 +1,25 @@
+#scoreWins {
+    column-count: 2;
+}
+
+.musicImage {
+    
+    background-color: orange;
+
+}
+
+img {
+    height: 200px;
+    width: auto;
+    border: 1px white solid;
+}
+
+
+div {
+    border: 2px black solid;
+}
+
+.rules {
+    max-width: 40%;
+    color: navy;
+}
