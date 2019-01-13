@@ -1,25 +1,71 @@
-#scoreWins {
-    column-count: 2;
+
+
+h2 {
+    text-align: center;
+    color: white;
+    background-color: navy;
 }
 
+
+.title {
+    background-color: navy;
+    
+}
 .musicImage {
     
-    background-color: orange;
-
+    background-color: navy;
+    text-align:center;
+    
+    
+    
+    
 }
+
+#scoreBox {
+    border: 1px black dashed;
+    width: 12%;
+    height: 45%;
+    float: right;
+    background-color: white;
+    padding: 0 15px;
+    
+}
+#scoreWins {
+    float: left;
+    background-color: white;
+    border: 1px black dashed;
+    width: 12%;
+    height: 45%;
+    
+}
+
 
 img {
     height: 200px;
     width: auto;
-    border: 1px white solid;
-}
-
-
-div {
-    border: 2px black solid;
 }
 
 .rules {
-    max-width: 40%;
+    max-width: 65%;
+    height: 40%;
     color: navy;
+    margin: auto;
+    background-color: white;
+    opacity: 0.95;
+      
+   
+}
+
+.bground {
+    background-color: navy;
+    
+}
+
+
+body {
+    background-color: navy;
+    background-image: url("../images/boombox.png"); 
+    margin-top: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
 }

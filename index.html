@@ -1,43 +1,67 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <div>
+    <div class="title">
         <h2>Music Collector</h2>
     </div>
-    <div class='rules'>
-        <ul>
-            <li>You will be given a random number at the start of the game</li>
-            <li>There are four audio formats below. By clicking on an audio format you will add a specific amount of points to your total score</li>
-            <li>You win the game by matching your total score to a random number. You lose the game if your total score goes about the random number.</li>
-            <li>The value of each audio format is hidden from you until you click on it.</li>
-            <li>Each time when the game starts, the game will change the value of each crystal</li>
-        </ul>
-    </div>
-    <div>
-        <div id='scoreWins'>0</div>
-        <div></div>
-            <p id='win'>Wins: 0</p>
-            <p id='loss'>Losses: 0</p>
+    <div class='bground'>
+        <div class='rules'>
+            <ul>
+                <li>You will be given a random number at the start of the
+                    game</li>
+                <li>There are four audio formats below. By clicking on an
+                    audio format you will add a specific amount of points
+                    to your total score</li>
+                <li>You win the game by matching your total score to a
+                    random number. You lose the game if your total score
+                    goes about the random number.</li>
+                <li>The value of each audio format is hidden from you
+                    until you click on it.</li>
+                <li>Each time when the game starts, the game will change
+                    the value of each crystal</li>
+            </ul>
         </div>
     </div>
+
+
+    <div id='scoreWins'>0</div>
+    <div id='scoreBox'>
+       
+
+        <div>
+            <p id='win'>Wins:
+                0</p>
+            <p id='loss'>Losses:
+                0</p>
+        </div>
+
+        <div id='scoreText'>Your total score is:</div>
+        <div id='usrScore'>0 </div>
+    </div>
+
     <div class='musicImage'>
-        <img class='music' id='0' src='./assets/images/record.png' >
+        <img class='music' id='0' src='./assets/images/record.png'>
         <img class='music' id='1' src='./assets/images/tape.png'>
         <img class='music' id='2' src='./assets/images/cd.png'>
         <img class='music' id='3' src='./assets/images/ipod.png'>
     </div>
-    <div>Your total score is:</div>
-    <div id='usrScore'>0 </div>
-    
+
+
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='assets/javascript/game.js'></script>
 
 </body>
+
 </html>

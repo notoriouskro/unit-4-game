@@ -18,7 +18,7 @@ function initScore() {
     var random = (Math.floor((Math.random() * 12) + 1));
     crystalVal.push(random);
   }
- 
+
 
 }
 
@@ -30,11 +30,11 @@ $(".music").on("click", function () {
   var index = this.id;
 
   var val = crystalVal[index];
-  console.log(val);
+  
 
 
   totalScore += val;
-  console.log(totalScore);
+ 
   $('#usrScore').text(totalScore);
   doGame();
 
@@ -51,12 +51,12 @@ function doGame() {
     losses++;
     $('#loss').text("Losses: " + losses);
     initScore();
-  } else  {
+  } else {
 
-  $('#win').text("Wins: " + wins);
-  $('#loss').text("Losses: " + losses);
-  $('#usrScore').text(totalScore);
-}
+    $('#win').text("Wins: " + wins);
+    $('#loss').text("Losses: " + losses);
+    $('#usrScore').text(totalScore);
+  }
 }
 
 
