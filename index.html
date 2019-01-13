@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body onload='initScore()'>
+<body>
     <div>
         <h2>Music Collector</h2>
     </div>
@@ -21,7 +21,12 @@
         </ul>
     </div>
     <div id='scoreWins'>0</div>
-    <div class='musicImage'><img class='music1' src='./assets/images/record.png' ><img class='music2' src='./assets/images/tape.png'><img class='music3' src='./assets/images/cd.png'><img class='music4' src='./assets/images/ipod.png'></div>
+    <div class='musicImage'>
+        <img class='music' id='0' src='./assets/images/record.png' >
+        <img class='music' id='1' src='./assets/images/tape.png'>
+        <img class='music' id='2' src='./assets/images/cd.png'>
+        <img class='music' id='3' src='./assets/images/ipod.png'>
+    </div>
     <div>Your total score is:</div>
     <div id='usrScore'>0 </div>
     

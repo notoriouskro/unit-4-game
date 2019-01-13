@@ -1,57 +1,58 @@
-var cValue = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
-
 var randScore = '';
 var randValue = '';
 var wins = 0;
 var losses = 0;
 var totalScore = 0;
-var crystalOne = '';
-var crystalTwo = [];
-var crystalThree = [];
-var crystalFour = [];
+var crystalVal = [];
+var compNum = 0;
 
 
 
 function initScore() {
-    var x = document.getElementById('scoreWins')
-    x.innerHTML = (Math.floor((Math.random() * 120) + 19));
-  };
+  compNum = (Math.floor((Math.random() * 120) + 19));
+  $('#scoreWins').html(compNum);
 
-    
-  $(".music1").on("click", function() {
-
-    // Clicking the button triggers an alert message.
-    alert("You clicked a music 1!");
-
-  });
-
-  $(".music2").on("click", function() {
-
-    // Clicking the button triggers an alert message.
-    alert("You clicked a music 2!");
-
-  });
-
-  $(".music3").on("click", function() {
-
-    // Clicking the button triggers an alert message.
-    alert("You clicked a music 3!");
-
-  });
-
-  $(".music4").on("click", function() {
-
-    // Clicking the button triggers an alert message.
-    alert("You clicked a music 4!");
-
-  });
+  ;
   
 
-    
+  for (var i=0; i<4; i++) {
+    var random = (Math.floor((Math.random() * 12) + 1));
+    crystalVal.push(random);
+  }
+console.log(crystalVal);
+};
 
-  
 
+$(".music").on("click", function () {
+  var index = this.id;
+
+  val = crystalVal[index];
+  console.log(val);
  
+
+  totalScore += val;
+  console.log(totalScore);
+  $('#usrScore').text(totalScore);
+  ;
+
+
+});
+
+if (totalScore === compNum) {
+wins++;
+
+} else if (totalScore > compNum){
+  losses++
+} else (){
+
+};
+
+
+
+initScore();
+
+
+
 
 
 
